@@ -1,0 +1,29 @@
+== Prueba 1 (23:34:57 UTC)
+nth      http   tiempo    memoHit    memoAntes   memoDesp    instanciaIniciada         cuerpo
+1000     200    1.370663s false      2           1001        2026-11-05T23:34:57.894Z  209 digitos
+5000     200    0.348360s false      1001        5001        2026-11-05T23:34:57.894Z  1045 digitos
+9000     200    0.345153s false      5001        9001        2026-11-05T23:34:57.894Z  1881 digitos
+12000    200    0.586629s false      9001        12001       2026-11-05T23:34:57.894Z  2508 digitos
+15000    200    0.304101s false      12001       15001       2026-11-05T23:34:57.894Z  3135 digitos
+20000    200    0.428133s false      15001       20001       2026-11-05T23:34:57.894Z  4180 digitos
+1000000  500    0.328198s            20001       20001       2026-11-05T23:34:57.894Z  81 digitos
+
+== Prueba 2, inmediata (23:35:03 UTC)
+nth      http   tiempo    memoHit    memoAntes   memoDesp    instanciaIniciada         cuerpo
+1000     200    0.340449s true       20001       20001       2026-11-05T23:34:57.894Z  209 digitos
+5000     200    0.332012s true       20001       20001       2026-11-05T23:34:57.894Z  1045 digitos
+9000     200    0.363530s true       20001       20001       2026-11-05T23:34:57.894Z  1881 digitos
+12000    200    0.318600s true       20001       20001       2026-11-05T23:34:57.894Z  2508 digitos
+15000    200    0.286742s true       20001       20001       2026-11-05T23:34:57.894Z  3135 digitos
+20000    200    0.293121s true       20001       20001       2026-11-05T23:34:57.894Z  4180 digitos
+1000000  500    0.577912s            20001       20001       2026-11-05T23:34:57.894Z  81 digitos
+
+== Prueba 3, inmediata (23:35:08 UTC)
+nth      http   tiempo    memoHit    memoAntes   memoDesp    instanciaIniciada         cuerpo
+1000     200    0.417094s true       20001       20001       2026-11-05T23:34:57.894Z  209 digitos
+5000     200    0.284173s true       20001       20001       2026-11-05T23:34:57.894Z  1045 digitos
+9000     200    0.309543s true       20001       20001       2026-11-05T23:34:57.894Z  1881 digitos
+12000    200    0.314981s true       20001       20001       2026-11-05T23:34:57.894Z  2508 digitos
+15000    200    0.332002s true       20001       20001       2026-11-05T23:34:57.894Z  3135 digitos
+20000    200    0.293372s true       20001       20001       2026-11-05T23:34:57.894Z  4180 digitos
+1000000  500    0.374240s            20001       20001       2026-11-05T23:34:57.894Z  81 digitos

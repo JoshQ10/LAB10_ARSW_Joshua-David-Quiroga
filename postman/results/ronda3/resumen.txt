@@ -1,0 +1,12 @@
+Concurrencia=10 nth=1000000 tiempo total=32s
+run-1        status=200 tiempo=7658ms OK
+run-2        status=200 tiempo=7901ms OK
+run-3        status=200 tiempo=7518ms OK
+run-4        status=200 tiempo=7548ms OK
+run-5        status=200 tiempo=7456ms OK
+run-6        status=200 tiempo=7548ms OK
+run-7        status=200 tiempo=7820ms OK
+run-8        status=200 tiempo=7528ms OK
+run-9        status=200 tiempo=8217ms OK
+run-10       status=200 tiempo=8460ms OK
+Exitosas=10 Fallidas=0 Min=7456ms Max=8460ms Promedio=7765ms

@@ -1,12 +1,14 @@
 {
   "name": "FunctionProject",
   "version": "1.0.0",
-  "description": "",
+  "description": "Azure Functions para calcular el enesimo numero de Fibonacci (ARSW - LAB10)",
+  "main": "src/functions/*.js",
   "scripts": {
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "@azure/functions": "^4.17.0",
     "big-integer": "^1.6.48"
   },
   "devDependencies": {}

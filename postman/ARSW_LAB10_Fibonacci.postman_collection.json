@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "ARSW_LAB10_Fibonacci",
+    "description": "Peticiones a las Azure Functions Fibonacci (iterativa) y FibonacciMemo (recursiva con memoization).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Fibonacci",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 200', function () { pm.response.to.have.status(200); });",
+              "pm.test('Body is a number', function () { pm.expect(pm.response.text()).to.match(/^[0-9]+$/); });",
+              "console.log('nth=' + pm.environment.get('NTH') + ' time=' + pm.response.responseTime + 'ms digits=' + pm.response.text().length);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n    \"nth\": {{NTH}}\n}" },
+        "url": { "raw": "{{FUNCTION_URL}}/api/Fibonacci", "host": ["{{FUNCTION_URL}}"], "path": ["api", "Fibonacci"] }
+      }
+    }
+  ]
+}

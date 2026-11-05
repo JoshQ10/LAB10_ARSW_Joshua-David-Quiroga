@@ -1,0 +1,19 @@
+== Prueba 1 (23:31:09 UTC)
+nth      http   tiempo    memoHit    memoAntes   memoDesp    instanciaIniciada         cuerpo
+1000     200    1.376377s false      2           1001        2026-11-05T23:31:10.228Z  209 digitos
+5000     200    1.157584s false      2           5001        2026-11-05T23:31:11.757Z  1045 digitos
+9000     500    1.018017s            2           2           2026-11-05T23:31:13.144Z  78 digitos
+10000    500    1.300317s            2           2           2026-11-05T23:31:14.790Z  79 digitos
+15000    500    1.072791s            2           2           2026-11-05T23:31:16.195Z  79 digitos
+20000    500    1.046100s            2           2           2026-11-05T23:31:17.578Z  79 digitos
+1000000  500    0.299383s            2           2           2026-11-05T23:31:13.144Z  81 digitos
+
+== Prueba 2, inmediata (23:31:19 UTC)
+nth      http   tiempo    memoHit    memoAntes   memoDesp    instanciaIniciada         cuerpo
+1000     200    0.324740s false      2           1001        2026-11-05T23:31:14.790Z  209 digitos
+5000     200    1.214984s false      2           5001        2026-11-05T23:31:20.532Z  1045 digitos
+9000     500    0.409616s            2           2           2026-11-05T23:31:17.578Z  78 digitos
+10000    500    1.637337s            2           2           2026-11-05T23:31:23.260Z  79 digitos
+15000    500    0.373460s            1001        1001        2026-11-05T23:31:10.228Z  79 digitos
+20000    500    0.332305s            5001        5001        2026-11-05T23:31:20.532Z  79 digitos
+1000000  500    1.154210s            2           2           2026-11-05T23:31:26.236Z  81 digitos

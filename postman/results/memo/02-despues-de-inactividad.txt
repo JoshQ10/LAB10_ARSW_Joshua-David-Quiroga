@@ -1,0 +1,19 @@
+== Prueba 4, despues de 10 minutos sin trafico (23:45:22 UTC)
+nth      http   tiempo    memoHit    memoAntes   memoDesp    instanciaIniciada         cuerpo
+1000     200    1.409248s false      2           1001        2026-11-05T23:45:22.649Z  209 digitos
+5000     200    0.369992s false      1001        5001        2026-11-05T23:45:22.649Z  1045 digitos
+9000     200    0.312835s false      5001        9001        2026-11-05T23:45:22.649Z  1881 digitos
+12000    200    0.330152s false      9001        12001       2026-11-05T23:45:22.649Z  2508 digitos
+15000    200    0.380587s false      12001       15001       2026-11-05T23:45:22.649Z  3135 digitos
+20000    200    0.304224s false      15001       20001       2026-11-05T23:45:22.649Z  4180 digitos
+1000000  500    0.369438s            20001       20001       2026-11-05T23:45:22.649Z  81 digitos
+
+== Prueba 5, inmediata (23:45:28 UTC)
+nth      http   tiempo    memoHit    memoAntes   memoDesp    instanciaIniciada         cuerpo
+1000     200    0.306342s true       20001       20001       2026-11-05T23:45:22.649Z  209 digitos
+5000     200    0.347853s true       20001       20001       2026-11-05T23:45:22.649Z  1045 digitos
+9000     200    0.358688s true       20001       20001       2026-11-05T23:45:22.649Z  1881 digitos
+12000    200    0.329112s true       20001       20001       2026-11-05T23:45:22.649Z  2508 digitos
+15000    200    0.314224s true       20001       20001       2026-11-05T23:45:22.649Z  3135 digitos
+20000    200    0.346861s true       20001       20001       2026-11-05T23:45:22.649Z  4180 digitos
+1000000  500    0.413301s            20001       20001       2026-11-05T23:45:22.649Z  81 digitos

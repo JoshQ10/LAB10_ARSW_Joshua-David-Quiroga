@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "ARSW_LAB10_FibonacciMemo",
+    "description": "Peticion a la Azure Function FibonacciMemo (recursiva con memoization).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "FibonacciMemo",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 200', function () { pm.response.to.have.status(200); });",
+              "console.log('nth=' + pm.environment.get('NTH') + ' status=' + pm.response.code + ' time=' + pm.response.responseTime + 'ms memoHit=' + pm.response.headers.get('x-memo-hit') + ' memoBefore=' + pm.response.headers.get('x-memo-size-before') + ' instance=' + pm.response.headers.get('x-instance-started-at'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n    \"nth\": {{NTH}}\n}" },
+        "url": { "raw": "{{FUNCTION_URL}}/api/FibonacciMemo", "host": ["{{FUNCTION_URL}}"], "path": ["api", "FibonacciMemo"] }
+      }
+    }
+  ]
+}
